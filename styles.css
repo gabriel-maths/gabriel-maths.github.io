@@ -1,0 +1,83 @@
+body {
+    font: normal 12px, Arial, sans-serif;
+}
+
+h2 {
+    font-size: normal 18px, Arial, sans-serif;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+
+h3 {
+    font-size: normal 13px, Arial, sans-serif;
+}
+
+li {
+  margin: 5px 0;
+}
+
+p {
+    margin-bottom: 25px;
+}
+
+.column {
+  float: left;
+}
+
+.left {
+  width: 55%;
+}
+.right {
+  width: 45%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+a:link {
+  color: #00407a;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #00407a;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+/* styles for desktop devices */
+@media only screen and (min-width: 992px) {
+  body {
+    /*font-size: 16px;*/
+    width: 67%;
+    margin: auto;
+  }
+}
+
+/* styles for tablet devices */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  body {
+    /*font-size: 14px;*/
+    width: 90%;
+    margin: auto;
+  }
+}
+
+/* styles for mobile devices */
+@media only screen and (max-width: 767px) {
+  body {
+    /*font-size: 12px;*/
+    width: 100%;
+    margin: 0;
+  }
+  .column {
+    width: 100%;
+  }
+
+}
